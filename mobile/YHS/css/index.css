@@ -1,0 +1,83 @@
+.yhs-logo{
+    padding-top: .825rem;
+    padding-bottom: 0;
+}
+.bar-nav~.content {
+    top: 0;
+}
+.yhsC-menu{
+    background: #fff;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    padding:.5rem 0.725rem !important;
+    
+}
+.yhsC-menu ul{
+    display: flex;
+    display:-webkit-flex;
+    flex-wrap:wrap;
+}
+.yhsC-menu li {
+    width:25%;
+    padding-bottom: .5rem;
+}
+.yhsC-menu h6.publicName{
+    font-size:.45rem;
+    font-weight: normal;
+    padding-top: .65rem;
+    color: #000000;
+}
+.icon img{
+    width: 1.85rem;
+    height:1.93rem;
+}
+.yhsC-new{
+    padding:.6rem 0.725rem !important;
+    background: #fff;
+}
+.y-n-icon{
+    width: 1rem;
+    padding-right:2%;
+}
+.y-n-textBox{
+    width: 86%;
+    font-size: .4rem;
+    color: #000;
+    height: .6rem;
+    line-height: .6rem;
+}
+.y-n-textBox p{
+    line-height: .6rem;
+}
+.yhsC-class{
+    padding: .6rem 0.725rem !important;
+}
+.public-row{
+    background: #fff;
+    margin-bottom: .3rem;
+}
+.public-tittle{
+    font-size: .6rem;
+    color: #8f8f8f;
+    font-weight: normal;
+    background: #f2f6f7;
+    padding: 0 0.725rem;
+    padding-bottom: .3rem;
+}
+.public-type{
+    font-size: .7rem;
+    color: #000;
+    padding: 0.25rem 0.725rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.public-type a{
+    color: #000;
+    display: inline-block;
+    width: 25%;
+    font-size: .6rem;
+    padding: 0 .25rem;
+    box-sizing: border-box;
+    -webkit-box-sizng:border-box;
+    line-height: 1.2rem;
+}

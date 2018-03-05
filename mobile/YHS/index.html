@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="renderer" content="webkit|ie-comp|ie-stand" />
+        <title>印划算</title>
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/position.css" />
+        <link rel="stylesheet" href="iconFont/yhsFont.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <script src="js/jquery-1.11.0.min.js" ></script>
+        <script src="js/common.js" ></script>
+        <script src="js/index.js" ></script>
+    </head>
+    <body>
+        <div class="wrap">
+            <!-- nav -->
+            <nav class="bar bar-nav font-0 tableLayout">
+                <a href="javascript:;" class="InlineBlock tab-item minColor-3">
+                    <span class="Block yhs-font icon-index bar-nav-icon"></span>
+                    <span class="Block tab-label font-24">首页</span>
+                </a>
+                <a href="javascript:;" class="InlineBlock tab-item">
+                    <span class="Block yhs-font icon-h2 bar-nav-icon"></span>
+                    <span class="Block tab-label font-24">产品</span>
+                </a>
+                <a href="javascript:;" class="InlineBlock tab-item">
+                    <span class="Block yhs-font icon-my bar-nav-icon"></span>
+                    <span class="Block tab-label font-24">我的</span>
+                </a>
+            </nav>
+            <div class="content">
+                <div class="">
+                    <div class="yhs-header boxSizing">
+                        <div class="yhs-logo boxSizing">
+                            <img src="img/index/logo.png" alt="" />
+                        </div>
+                        <div class="yhs-serach">
+                            <div class="posR">
+                                <input type="text" placeholder="输入你要搜索的产品" class="font-26 " />
+                                <code class="posA yhs-font icon-Magnifier"></code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="yhs-content">
+                        <div class="yhsC-menu row yhs-c-div">
+                            <ul>
+                                <li>
+                                    <a href="javascript:;">
+                                        <div class="icon flex justCenter">
+                                            <img src="img/index/icon1.png" alt="" />
+                                        </div>
+                                        <h6 class="publicName flex justCenter">商务印刷</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <div class="icon flex justCenter">
+                                            <img src="img/index/icon2.png" alt="" />
+                                        </div>
+                                        <h6 class="publicName flex justCenter">标识标牌</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <div class="icon flex justCenter">
+                                            <img src="img/index/icon3.png" alt="" />
+                                        </div>
+                                        <h6 class="publicName flex justCenter">工具耗材</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <div class="icon flex justCenter">
+                                            <img src="img/index/icon4.png" alt="" />
+                                        </div>
+                                        <h6 class="publicName flex justCenter">广告灯箱</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <div class="icon flex justCenter">
+                                            <img src="img/index/icon5.png" alt="" />
+                                        </div>
+                                        <h6 class="publicName flex justCenter">广告工艺字</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <div class="icon flex justCenter">
+                                            <img src="img/index/icon6.png" alt="" />
+                                        </div>
+                                        <h6 class="publicName flex justCenter">广告礼品</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <div class="icon flex justCenter">
+                                            <img src="img/index/icon7.png" alt="" />
+                                        </div>
+                                        <h6 class="publicName flex justCenter">印刷包装</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <div class="icon flex justCenter">
+                                            <img src="img/index/icon8.png" alt="" />
+                                        </div>
+                                        <h6 class="publicName flex justCenter">展览展示</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="yhsC-new row font0 yhs-c-div">
+                            <span class="y-n-icon InlineBlock">
+                                <img src="img/index/tz.jpg" alt="" />
+                            </span>
+                            <div class="y-n-textBox InlineBlock overflow " >
+                                <p class="overflow text_o "><a href="javasript:;">hellow world!    -----   one</a></p>
+                                <p class="overflow text_o "><a href="javasript:;">hellow world!    -----   two</a></p>
+                                <p class="overflow text_o "><a href="javasript:;">hellow world!    -----   three</a></p>
+                                <p class="overflow text_o "><a href="javasript:;">hellow world!    ------------------------------------------------------------------------------------------------------------------------   four</a></p>
+                                <p class="overflow text_o "><a href="javasript:;">hellow world!    -----   five</a></p>    
+                            </div>
+                        </div>
+                        <article>
+                            <!-- 产品分类 -->
+                            <div class="yhsC-class row yhs-c-div">
+                                <h4 class="font-24 minColor-2" data-th-text="${category.name}">商务印刷</h4>
+                            </div>
+                            <dl class="public-row" data-th-each="category2 : ${category.childNodes}">
+                                <dt>
+                                    <h6 class="public-tittle"  data-th-text="${category2.name}">卡片类</h6>
+                                <dd class="public-type" >
+                                    <a href="screen.html" data-th-href="screen.html"
+                                       data-th-each="product : ${category2.childNodes}" 
+                                       data-th-text="${product.name}">铜板名片</a>
+                                    
+                                </dd>
+                                </dt>
+                            </dl>
+                            <dl class="public-row" th:remove="all">
+                                <dt>
+                                    <h6 class="public-tittle">卡片类</h6>
+                                <dd class="public-type">
+                                    <a href="javascript:;">刮刮卡</a>
+                                    <a href="javascript:;">异形卡</a>
+                                    <a href="javascript:;">挪车卡</a>
+                                    <a href="javascript:;">明信片</a>
+                                    <a href="javascript:;">门票</a>
+                                    <a href="javascript:;">吊牌</a>
+                                </dd>
+                                </dt>
+                            </dl>
+                            <dl class="public-row" th:remove="all">
+                                <dt>
+                                    <h6 class="public-tittle">PVC卡类</h6>
+                                <dd class="public-type">
+                                    <a href="javascript:;">会员卡</a>
+                                    <a href="javascript:;">充值卡</a>
+                                    <a href="javascript:;">磁条卡</a>
+                                    <a href="javascript:;">人像卡</a>
+                                    <a href="javascript:;">折弯卡</a>
+                                    <a href="javascript:;">异形卡</a>
+                                    <a href="javascript:;">拉丝卡</a>
+                                    <a href="javascript:;">镭射卡</a>
+                                </dd>
+                                </dt>
+                            </dl>
+                            <dl class="public-row" th:remove="all">
+                                <dt>
+                                    <h6 class="public-tittle">标签/不干胶类</h6>
+                                <dd class="public-type">
+                                    <a href="javascript:;">常用不干胶</a>
+                                    <a href="javascript:;">可移不干胶</a>
+                                    <a href="javascript:;">艺术纸</a>
+                                    <a href="javascript:;">特种纸</a>
+                                    <a href="javascript:;">标签</a>
+                                    <a href="javascript:;">透明胶带</a>
+                                </dd>
+                                </dt>
+                            </dl>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

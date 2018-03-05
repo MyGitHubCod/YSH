@@ -1,0 +1,130 @@
+html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,em,font,img,small,strong,b,u,i,s,dl,dt,dd,ol,ul,li,
+fieldset,form,label{padding:0px; margin:0px;line-height:normal;}
+/* 禁用iPhone中Safari的字号自动调整 */
+html{
+    -webkit-text-size-adjust: none;
+    font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+    background: #f2f6f7; color: #646464;
+    overflow-y: scroll; overflow-x: hidden;
+    *overflow-y: auto !important;
+}
+body{
+    height:auto;
+}
+/* 设置HTML5元素为块 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+/* 设置图片视频等自适应调整 */
+img{max-width: 100%; height: auto; width: auto\9;border:0 none; /* ie8 */}
+.video embed, .video object, .video iframe { width: 100%; height: auto; }
+/* 公共库 */
+input[type=text]{
+    text-align:center;
+}
+input{
+    outline:none;  
+    border:0px; 
+}
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+    margin:0;
+    padding:0;
+}
+a { text-decoration: none !important; cursor: pointer; }
+li { list-style: none; }
+a { text-decoration: none; color: #555; }
+a:hover { text-decoration: none ; }
+a:focus{text-decoration:none ;color:#555;}
+a img { border: none;}
+a > img { vertical-align: bottom; }
+.white{
+    background: #fff;
+}
+.fff{
+    color: #fff;
+}
+.Cor333{
+    color:#333;
+}
+.Cor555{
+    color: #555
+}
+.minColor-1{
+    color: #ff6600;
+}
+.minColor-2{
+    color:#fb4402;
+}
+.minColor-3{
+    color: #ec9d24 !important;
+}
+.minBackground-1{
+    background: #ff6600;
+}
+.minBackground-2{
+    background: #fb4402;
+}
+.minBackground-3{
+    background: #ec9d24;
+}
+
+.posFixed{
+    position: fixed;
+}
+.posR{
+    position: relative;
+}
+.posA{
+    position: absolute;
+}
+.fl { float: left; }
+.fr { float: right; }
+.AfterClear{
+    content:'';
+    display:block;
+    height:0;
+    clear:both;
+}
+.InlineBlock{
+    display:inline-block;
+    vertical-align:middle;
+}
+.Block{
+    display: block;
+}
+.None{
+    display: none;
+}
+.boxSizing{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+.font-0{
+    font-size: 0;
+}
+.font-16{
+    font-size: .4rem;
+}
+.font-18{
+    font-size: .45rem;
+}
+.font-20{
+    font-size: .5rem;
+}
+.font-22{
+    font-size: .55rem;
+}
+.font-24{
+    font-size: .6rem;
+}
+.font-26{
+    font-size: .65rem;
+}
+.noWeight{
+    font-weight: normal;
+}

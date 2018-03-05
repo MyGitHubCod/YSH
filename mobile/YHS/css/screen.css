@@ -1,0 +1,111 @@
+em{
+    font-style: normal;
+}
+html{
+    background: #fff;
+}
+.publicPic{
+    width:100%;
+    height:6rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius:0.5rem;
+    background: #ff4466;
+}
+.yhs-S-f-synthesize span{
+    font-size: .6rem;
+}
+.yhs-S-f-synthesize .tab-item{
+    height: 1.325rem;
+}
+.yhs-S-f-classify{
+    padding:.5rem  0; 
+    border-top:2px solid #dedede;
+    border-bottom:2px solid #dedede;
+    margin: .5rem 0;
+}
+.y-s-f-c{
+    padding: 0 .4rem;   
+}
+.yhs-S-f-classify .tab-item{
+    height: auto;
+}
+.y-s-f-c span{
+    font-size: .6rem;
+    position: relative;
+    top:-.2rem;
+    cursor: pointer;
+}
+.yhs-S-f-classify .yhs-font{
+    font-size: .9rem;
+    position: absolute;
+    right: -.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.yhs-S-f-c-show{
+    top:2.356rem;
+    width:100%;
+    background: white;
+    padding:.25rem .5rem;
+    color: #202020;
+}
+.yhs-S-f-c-show li{
+    width: 33.333%;
+    display: inline-block;
+    text-align: center;
+    font-size: .6rem;
+    margin:.35rem 0;
+}
+.btnSzie{
+    width: 4.95rem;
+    height: 1.4rem;
+    display: inline-block;
+    padding: 0;
+    line-height: 1.4rem;
+    border-radius: .15rem;
+}
+/* 选择厂家 */
+.yhs-S-factory{
+    padding-bottom: 1rem;
+}
+.yhs-s-f-wrap>div.pad-06{
+    padding: 0 .6rem;
+}
+.yhs-factoryList li{
+    border-bottom:2px solid #dedede;
+    margin-bottom:.3rem;
+    padding-bottom: .3rem;
+}
+.yhs-f-Left{
+    width:76%;
+}
+.yhs-f-Left>div{
+    padding: .07rem 0;
+    letter-spacing: .04rem
+}
+.yhs-f-Right{
+    width:24%;
+}
+.factoryName{
+    font-size: .65rem;
+}
+.factoryScore{
+    font-size: .56rem;
+    color: #898989;
+}
+.factoryaddress{
+    font-size: .5rem;
+    color: #989898;
+}
+.yhs-f-Right{
+    vertical-align: bottom;
+}
+.goFactory{
+    display: block;
+    border-radius: .2rem;
+    color: white;
+    font-size: .65rem;
+    text-align: center;
+    line-height: 1.5rem;
+    width: 90%;
+}

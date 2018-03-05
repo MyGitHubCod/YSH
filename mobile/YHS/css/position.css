@@ -1,0 +1,85 @@
+/* flex */
+.flex{
+    display: flex;
+    display: -webkit-flex;
+}
+/* chuizhi */
+.justCenter{
+    justify-content: center;
+}
+/* justBetween */
+.justBetween{
+    justify-content:space-between;
+}
+/* zuoyou */
+.align-items{
+    align-items:center;
+}
+.row{
+    margin-bottom: .3rem;
+}
+/* nav-bar */
+.content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.content-padded{
+    margin:.5rem;
+}
+.bar-nav~.content{
+    top:2.2rem;
+}
+.bar-tab~.content{
+    bottom:2.2rem;
+}
+.bar{
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    height: 2.2rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    background-color: #fff;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.bar:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    top: auto;
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    z-index: 15;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+.bar-nav{
+    bottom: 0;
+    padding: 0;
+    width: 100%;
+}
+.bar-nav:before{
+    content: '';
+    position: absolute;
+    left:0;
+    top:0;
+    background: #f2f6f7;
+    display: block;
+    z-index: 15;
+}
+.bar-tab{
+    top:0;
+    width:100%;
+}
